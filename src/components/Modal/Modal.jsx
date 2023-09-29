@@ -7,7 +7,7 @@ export const Modal = ({ onBackdropClose, modalImage, onEscClose }) => {
     return () => {
       window.removeEventListener('keydown', onEscClose);
     };
-  }, [onEscClose]);
+  });
   return (
     <div onMouseDown={onBackdropClose} className={css.Overlay}>
       <div className={css.Modal}>
